@@ -14,7 +14,7 @@
         android:theme="@style/Theme.TravelRate"
         tools:targetApi="31" >
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activity.authentication.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".activity.authentication.SignInActivity"
