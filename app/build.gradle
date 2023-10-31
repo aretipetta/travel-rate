@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
-    compileSdk 32
-
+    compileSdk 34
+// prev compile sdk = 32
     defaultConfig {
         applicationId "com.ap.travelrate"
         minSdk 28
@@ -22,8 +22,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
 }
 
@@ -40,8 +40,13 @@ dependencies {
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
 
+//  Authentication
     // Add the dependency for the Firebase Authentication library
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-auth")
 
+//    Realtime Database
+    // Add the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-database")
 }
